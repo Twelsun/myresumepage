@@ -1,0 +1,487 @@
+* {
+    /*border: solid 1px black;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(./img/網格.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*----------nav----------*/
+.mynavbar {
+    width: 100%;
+    height: 70px;
+    padding: 50px 3vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mynavbar img {
+    height: 70px;
+    z-index: 999;
+}
+
+.menulist {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 3vw;
+    margin: 0;
+}
+
+.menulist li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.menulist li a {
+    color: #0000;
+    line-height: 1.5;
+    text-decoration: none;
+    text-shadow: 0 0 #0f172a, 0 1.5em #65AFD5;
+    transition: text-shadow .3s;
+}
+
+.menulist li a:hover {
+    text-shadow: 0 -1.5em #0f172a, 0 0 #65AFD5;
+}
+
+.hamburger {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid 3px #65AFD5;
+    position: fixed;
+    right: 3vw;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.hamburger span {
+    display: inline-block;
+    transition: all .4s;
+    /*アニメーションの設定*/
+    position: absolute;
+    left: 25%;
+    height: 3px;
+    background-color: #65AFD5;
+}
+
+/*----------叉叉動畫----------*/
+.hamburger span:nth-of-type(1) {
+    top: 18px;
+    width: 50%;
+}
+
+.hamburger span:nth-of-type(2) {
+    top: 26px;
+    width: 50%;
+}
+
+.hamburger.active span:nth-of-type(1) {
+    top: 16px;
+    transform: translateY(6px) rotate(-45deg);
+}
+
+.hamburger.active span:nth-of-type(2) {
+    top: 28px;
+    transform: translateY(-6px) rotate(45deg);
+}
+
+/*----------section----------*/
+.intro-section {
+    margin-top: 50px;
+    position: relative;
+}
+
+.intro-section>img:nth-child(1) {
+    height: 100%;
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+}
+
+.intro-section>img:nth-child(2) {
+    width: auto;
+    position: absolute;
+    top: 80px;
+    left: -120px;
+    z-index: -1;
+}
+
+.intro-section>img:nth-child(3) {
+    width: auto;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    z-index: -1;
+}
+
+.intro-section>img:nth-child(4) {
+    width: auto;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    z-index: -1;
+}
+
+.intro-section>img:nth-child(5) {
+    width: auto;
+    position: absolute;
+    top: 960px;
+    left: 50px;
+    z-index: -1;
+}
+
+.intro-section>img:nth-child(6) {
+    width: auto;
+    position: absolute;
+    top: 960px;
+    right: 0px;
+    z-index: -1;
+}
+
+.intro-opening>ul {
+    margin: 0;
+}
+
+.intro-opening ul:first-child {
+    color: #ADD0E6;
+    font-size: 24px;
+}
+
+.intro-opening ul:nth-child(2) {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.intro-mypic {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 6.5vw;
+}
+
+.detailintro {
+    background-color: #65AFD5;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 30px;
+    width: 450px;
+}
+
+.col-12 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1.2rem;
+    line-height: 200%;
+}
+
+.col-12 span {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: linear-gradient(transparent 50%, #FFF68F 50%);
+}
+
+@keyframes arrowdownani {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.arrow-down {
+    animation: arrowdownani 1.5s infinite alternate;
+}
+
+.col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.threes {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    margin-top: 36px;
+}
+
+.threes img {
+    width: 100px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0;
+}
+
+.card>img {
+    object-position: center center;
+    object-fit: scale-down;
+    width: 50%;
+}
+
+.skillcard {
+    margin: 0;
+}
+
+.card {
+    --bs-card-border-radius: 20px;
+    --bs-card-title-spacer-y: 1.2rem;
+    padding: 20px 0 0 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.card p {
+    padding-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #65AFD5;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    width: 60px;
+}
+
+.works-section {
+    position: relative;
+}
+
+.works-section>img {
+    position: absolute;
+    top: 3vw;
+    z-index: -1;
+}
+
+/*----------RWD----------*/
+@media (max-width:768px) {
+    .intro-mypic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .intro-opening ul:nth-child(1) {
+        text-align: center;
+    }
+
+    .intro-opening ul:nth-child(2) {
+        text-align: center;
+    }
+
+    .intro-opening {
+        margin-top: 30px;
+    }
+
+    .intro-section {
+        margin-top: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menulist {
+        display: none;
+    }
+
+    .menulist.active {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(180deg, #E4F3F3 0%, #ADD0E6 29.69%, #ADD0E6 57.29%, #ADD0E6 81.25%, #E4F3F3 100%);
+        padding-top: 100px;
+        top: 0;
+        right: 0;
+        margin: 0;
+        z-index: 99;
+    }
+
+    .menulist li {
+        width: 30%;
+        margin: 25px 0;
+        padding-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        overflow: hidden;
+        text-align: center;
+        border-bottom: solid 3px white;
+        border-bottom-style: dashed;
+    }
+
+    .menulist li a {
+        color: #0000;
+        line-height: 1.5;
+        text-decoration: none;
+        text-shadow: 0 0 white, 0 2.5em #FFF68F;
+        transition: text-shadow .3s;
+    }
+
+    .menulist li a:hover {
+        text-shadow: 0 -2.5em white, 0 0 #FFF68F;
+    }
+
+    .intro-section>img:nth-child(2) {
+        width: 36vw;
+        position: absolute;
+        top: 280px;
+        left: -50px;
+        z-index: -1;
+    }
+
+    .intro-section>img:nth-child(3) {
+        width: 120px;
+        position: absolute;
+        top: 250px;
+        right: 0px;
+        z-index: -1;
+    }
+
+    .intro-section>img:nth-child(4) {
+        width: auto;
+        position: absolute;
+        top: 920px;
+        left: -10px;
+        z-index: -1;
+    }
+
+    .intro-section>img:nth-child(5) {
+        width: auto;
+        position: absolute;
+        top: 1860px;
+        left: -20px;
+        z-index: -1;
+    }
+
+    .intro-section>img:nth-child(6) {
+        width: auto;
+        position: absolute;
+        top: 1250px;
+        right: -50px;
+        z-index: -1;
+    }
+
+    .mynavbar img {
+        height: 50px;
+    }
+
+}
+
+@media (max-width:992px) {
+    .detailintro {
+        width: auto;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .intro-section>img:nth-child(2) {
+        width: 28vw;
+        position: absolute;
+        top: 380px;
+        left: -80px;
+        z-index: -1;
+    }
+
+    .intro-section>img:nth-child(3) {
+        width: 15vw;
+        position: absolute;
+        top: 360px;
+        right: 20px;
+        z-index: -1;
+    }
+
+    .intro-section>img:nth-child(4) {
+        width: auto;
+        position: absolute;
+        top: 800px;
+        left: -10px;
+        z-index: -1;
+    }
+
+    .intro-section>img:nth-child(5) {
+        width: auto;
+        position: absolute;
+        top: 1600px;
+        left: 50px;
+        z-index: -1;
+    }
+
+    .intro-section>img:nth-child(6) {
+        width: auto;
+        position: absolute;
+        top: 1100px;
+        right: -50px;
+        z-index: -1;
+    }
+}
+
+/* fadeIn */
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(15px);
+    }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeInTrigger {
+    opacity: 0;
+    transform: translateY(-15px);
+}
