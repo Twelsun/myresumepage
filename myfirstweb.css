@@ -8,8 +8,7 @@
     font-family: 'Roboto', 'Noto Sans TC',sans-serif;
 }
 
-html,
-body {
+html,body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
@@ -17,7 +16,7 @@ body {
 }
 
 body {
-    background-image: url("img/grids.svg");
+    background-image: url(img/grids.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
