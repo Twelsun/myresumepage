@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background-image: url(img/網格.svg);
+    background-image: url("img/grids.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
