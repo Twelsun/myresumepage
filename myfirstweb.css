@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+
 * {
     /*border: solid 1px black;*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Noto Sans TC',sans-serif;
 }
 
 html,
@@ -12,7 +17,7 @@ body {
 }
 
 body {
-    background-image: url(./img/網格.svg);
+    background-image: url(img/網格.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -106,6 +111,9 @@ body {
 }
 
 /*----------section----------*/
+.row {
+    margin: 0;
+}
 .intro-section {
     margin-top: 50px;
     position: relative;
@@ -200,6 +208,9 @@ body {
     font-weight: bold;
     background: linear-gradient(transparent 50%, #FFF68F 50%);
 }
+.col-12 h2 {
+    font-weight: bold;
+}
 
 @keyframes arrowdownani {
     0% {
@@ -243,6 +254,7 @@ body {
 
 h3 {
     font-size: 20px;
+    font-weight: bold;
     margin-block-start: 0.5rem;
     margin-block-end: 0;
 }
@@ -338,6 +350,7 @@ h3 {
         padding-top: 100px;
         top: 0;
         right: 0;
+        padding-left: 0;
         margin: 0;
         z-index: 99;
     }
@@ -408,6 +421,13 @@ h3 {
 
     .mynavbar img {
         height: 50px;
+    }
+    .col-12 {
+        font-size: 1rem;
+    }
+    
+    .col-12 span {
+        font-size: 1.2rem;
     }
 
 }
