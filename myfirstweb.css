@@ -5,23 +5,28 @@
 
 * {
     /*border: solid 1px black;*/
-    font-family: 'Roboto', 'Noto Sans TC',sans-serif;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
 }
 
-html,body {
+html,
+body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     overflow-x: hidden;
 }
 
-body {
-    background-image: url(img/grids.svg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+body:before {
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(img/grids.svg) center 0 no-repeat;
     background-size: cover;
-}
+  }
 
 /*----------nav----------*/
 .mynavbar {
@@ -113,6 +118,7 @@ body {
 .row {
     margin: 0;
 }
+
 .intro-section {
     margin-top: 50px;
     position: relative;
@@ -165,18 +171,16 @@ body {
     z-index: -1;
 }
 
-.intro-opening>ul {
-    margin: 0;
-}
-
 .intro-opening ul:first-child {
     color: #ADD0E6;
     font-size: 24px;
+    padding-left: 0;
 }
 
 .intro-opening ul:nth-child(2) {
     font-size: 54px;
     font-weight: bold;
+    padding-left: 0;
 }
 
 .intro-mypic {
@@ -207,6 +211,7 @@ body {
     font-weight: bold;
     background: linear-gradient(transparent 50%, #FFF68F 50%);
 }
+
 .col-12 h2 {
     font-weight: bold;
 }
@@ -311,6 +316,7 @@ h3 {
         align-items: center;
         justify-content: center;
         padding-right: 0;
+        padding-left: 0;
     }
 
     .intro-opening ul:nth-child(1) {
@@ -421,10 +427,11 @@ h3 {
     .mynavbar img {
         height: 50px;
     }
+
     .col-12 {
         font-size: 1rem;
     }
-    
+
     .col-12 span {
         font-size: 1.2rem;
     }
