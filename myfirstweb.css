@@ -189,7 +189,9 @@ body:before {
     justify-content: right;
     padding-right: 6.5vw;
 }
-
+.intro-mypic img{
+    width: 360px;
+}
 .detailintro {
     background-color: #65AFD5;
     color: white;
