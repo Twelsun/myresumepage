@@ -190,7 +190,7 @@ body:before {
     padding-right: 6.5vw;
 }
 .intro-mypic img{
-    width: 360px;
+    width: 320px;
 }
 .detailintro {
     background-color: #65AFD5;
@@ -281,10 +281,7 @@ h3 {
     padding: 20px 0 0 0;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     align-items: center;
-}
-
-.card p {
-    padding-top: 10px;
+    overflow: hidden;
 }
 
 .footer {
@@ -310,7 +307,20 @@ h3 {
     top: 3vw;
     z-index: -1;
 }
-
+.works-section img{
+    width: 100%;
+}
+.works-section .card{
+    padding: 0;
+}
+.card-text{
+    color: gray;
+    text-align: center;
+}
+.works-section a{
+    text-decoration: none;
+    color: #000;
+}
 /*----------RWD----------*/
 @media (max-width:768px) {
     .intro-mypic {
