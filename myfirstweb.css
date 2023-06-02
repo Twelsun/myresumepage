@@ -252,6 +252,7 @@ p {
 .downhalf p {
     font-size: 20px;
     line-height: 40px;
+    z-index: 99;
 }
 
 .downhalf p span {
@@ -327,7 +328,7 @@ p {
     display: block;
     background: #FFF;
     margin: 0 4px;
-    padding: 10px 20px;
+    padding: 10px 12px;
     border-width: 2px 2px 0px 2px;
     border-style: solid;
     border-color: #333;
@@ -458,7 +459,7 @@ p {
 }
 
 .webcard>.row .col-md-7 p {
-    font-size: 1.4vw;
+    font-size: 20px;
 }
 
 #works .row {
@@ -499,10 +500,6 @@ p {
 
 .hide-area {
     display: none;
-}
-
-.hide-area h2 {
-    margin-bottom: 48px;
 }
 
 .modaal-fullscreen .modaal-content-container {
@@ -642,7 +639,7 @@ p {
     color: transparent;
     outline: none;
     width: 8px;
-    height: 12px;
+    height: 8px;
     display: block;
     border-radius: 50%;
     background: #E7E7E7;
@@ -814,6 +811,10 @@ p {
         height: 88px;
     }
 
+    .webcard>.row .col-md-7 p {
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width:576px) {
@@ -905,6 +906,10 @@ p {
     #uptotop img {
         width: 64px;
         height: 64px;
+    }
+
+    .webcard>.row .col-md-7 p {
+        font-size: 12px;
     }
 
 }
