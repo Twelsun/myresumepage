@@ -5,21 +5,436 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>晶旭の個人履歷</title>
+    <meta property="og:title" content="JYUNNI_Design" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="770" />
+    <title>JYUNNI_Design</title>
+    <link href="./img/wen_ico.svg" rel="shortcut icon" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="myfirstweb.css">
     <style>
     </style>
 </head>
 
-<body id="page-top">
+<body>
+    <a id="uptotop"><img src="./img/up_to_top.svg"></a>
+    <div id="header">
+        <a href="#"><img src="./img/header/mylogo.svg"></a>
+        <ul class="menu">
+            <li><a href="#skills">專長＆技能</a></li>
+            <li><a href="#works">網頁＆APP作品</a></li>
+            <li><a href="#paint">美編作品</a></li>
+            <li><a href="#acti">活動參與</a></li>
+        </ul>
+        <div id="ham">
+            <div class="switch">
+                <span></span><span></span><span></span>
+            </div>
+            <a href="#contact"><img src="./img/header:contact:smile.svg"><span>聯絡我</span></a>
+        </div>
+    </div>
+
+    <section id="intro">
+        <div class="uphalf row">
+            <div class="col-md-5 col-12">
+                <img src="./img/intro/mypic.png">
+            </div>
+            <div class="col-md-7 col-12">
+                <h1>謝 晶旭</h1>
+                <div>
+                    <p>學歷：國立臺北教育大學 文化創意產業經營學系</p>
+                </div>
+                <div>
+                    <p>興趣：平面設計、電繪、攝影</p>
+                </div>
+            </div>
+        </div>
+        <div class="downhalf">
+            <h1>自我介紹</h1>
+            <p>
+                我是一名<span>喜歡視覺設計</span>的人，<br>
+                擅長將繁雜的內容簡化成容易理解的模式。<br>
+                在偶然看過日本人設計的網頁後，<br>
+                就深深愛上那種簡潔又溫柔的排版，<br>
+                並向他們看齊，<br>
+                也想成為一個好的網頁設計師。<br><br>
+                目前仍<span>持續學習程式語言和視覺設計</span>的技能，<br>
+                對工作態度認真，<br>
+                並能在一次次的經驗中不斷精進。<br>
+            </p>
+            <img src="./img/intro/picleft.svg">
+            <img src="./img/intro/picright.svg">
+        </div>
+    </section>
+
+    <section id="working">
+        <h1>工作經歷</h1>
+        <div>
+            <div>2018.06-2018.08</div>
+            <p>（暑期）</p>
+            <p>大潤發＿倉管人員</p>
+        </div>
+        <div>
+            <div>2019.11-2022.03</div>
+            <p>（2年）</p>
+            <p>遠東都會City Super遠企店＿<br>收銀兼客服人員</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>專長＆技能</h1>
+        <div class="wrapper">
+            <ul class="tab">
+                <li><a href="#program">程式語言</a></li>
+                <li><a href="#drawapp">美編軟體</a></li>
+                <li><a href="#others">其他能力</a></li>
+            </ul>
+
+            <div class="areas">
+                <div id="program" class="area row">
+                    <div class="col-lg-2 skcard">
+                        <img src="./img/skills/html5_logo.svg.png">
+                        <p>HTML5</p>
+                        <img src="./img/skills/skill_level.svg">
+                    </div>
+                    <div class="col-lg-2 skcard">
+                        <img src="./img/skills/css3_logo.svg.png">
+                        <p>CSS</p>
+                        <img src="./img/skills/skill_level.svg">
+                    </div>
+                    <div class="col-lg-2 skcard">
+                        <img src="./img/skills/js_logo.svg.png">
+                        <p>Javascript</p>
+                        <img src="./img/skills/skill_level_start.svg">
+                    </div>
+                    <div class="col-lg-2 skcard">
+                        <img src="./img/skills/Bootstrap_logo.svg.png">
+                        <p>Bootstrap</p>
+                        <img src="./img/skills/skill_level.svg">
+                    </div>
+                    <div class="col-lg-2 skcard">
+                        <img src="./img/skills/github_logo.png">
+                        <p>Github</p>
+                        <img src="./img/skills/skill_level.svg">
+                    </div>
+                </div>
+                <div id="drawapp" class="area row">
+                    <div class="col-3 skcard">
+                        <img src="./img/skills/Figma_logo.png">
+                        <p>Figma</p>
+                        <img src="./img/skills/skill_level.svg">
+                    </div>
+                    <div class="col-3 skcard">
+                        <img src="./img/skills/ps_logo.svg.png">
+                        <p>Photoshop</p>
+                        <img src="./img/skills/skill_level.svg">
+                    </div>
+                    <div class="col-3 skcard">
+                        <img src="./img/skills/ai_logo.svg.png">
+                        <p>Illustrator</p>
+                        <img src="./img/skills/skill_level.svg">
+                    </div>
+                    <div class="col-3 skcard">
+                        <img src="./img/skills/csp_logo.png">
+                        <p>CSP</p>
+                        <img src="./img/skills/skill_level_good.svg">
+                    </div>
+                </div>
+                <div id="others" class="area row">
+                    <div class="col-lg-3 col-6 skcard">
+                        <img src="./img/skills/others_EN.svg">
+                        <p>英文<br><span>TOEIC多益790分</span></p>
+                        <div class="copy_button">
+                            <img src="./img/others/copy_button.svg">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 skcard">
+                        <img src="./img/others/others_JP.svg">
+                        <p>日文<br><span>大學通識課程+自學</span></p>
+                        <div class="copy_button">
+                            <img src="./img/others/copy_button.svg">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 skcard">
+                        <img src="./img/others/others_motor.svg">
+                        <p>機車駕照<br><span></span></p>
+                        <img src="./img/others/check.svg" width="36px" height="36px">
+                    </div>
+                    <div class="col-lg-3 col-6 skcard">
+                        <img src="./img/others/others_car.svg">
+                        <p>汽車駕照<br><span></span></p>
+                        <img src="./img/others/check.svg" width="36px" height="36px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <h1>網頁&APP作品</h1>
+        <div class="webcard row">
+            <a href="https://geminixfourth.github.io/GBME/gemini.html" target="_blank"><img src="./img/works/gemini_web_banner.png" width="100%"></a>
+            <p>活動網站實作</p>
+            <h2>Gemini Birthday Mini Exhibition</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <p>IG粉專委託設計小型偶像慶生展之網站，<br>以活動資訊陳列與禮物介紹為主要訴求。</p><br>
+                    <p>製作時間：4天<br>內容資料來源：粉專提供</p>
+                </div>
+                <div class="col-md-5 col-12">
+                    <a href="https://geminixfourth.github.io/GBME/gemini.html" target="_blank">
+                        <div class="link_button">
+                            <p>前往網站</p><img src="./img/others/arrow.svg">
+                        </div>
+                    </a>
+                    <a href="https://note.com/jyuuni_design/n/n2c500ec297a5" target="_blank">
+                        <div class="link_button">
+                            <p>設計過程</p><img src="./img/others/arrow.svg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="webcard row">
+            <a href="#"><img src="./img/works/ccjourney_banner.png" width="100%"></a>
+            <p>實境遊戲APP平台</p>
+            <h2>創樂遊APP練習</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <p>這是一款以實境解謎遊戲結合文創為主的APP。<br>
+                        讓故事與謎題引導玩家暢遊的同時，<br>
+                        亦能增進對文化的認識。</p><br>
+                    <p>製作時間：1個月<br>內容資料來源：部分取自蹦世界平台</p>
+                </div>
+                <div class="col-md-5 col-12">
+                    <a href="#">
+                        <div class="link_button">
+                            <p>前往 Prototype</p><img src="./img/others/arrow.svg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="link_button">
+                            <p>設計過程</p><img src="./img/others/arrow.svg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="webcard row">
+            <a href="#"><img src="./img/works/mc_banner.png" width="100%"></a>
+            <p>網站Redesign</p>
+            <h2>麥當勞Redesign練習</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <p>你是否也曾在麥當勞的官網上，<br>
+                        找了好久才找到餐點或優惠呢?<br>
+                        在結合自身與朋友經歷下，<br>
+                        對麥當勞官網進行了一點小改造。</p><br>
+                    <p>製作時間：2個禮拜<br>內容資料來源：麥當勞官網</p>
+                </div>
+                <div class="col-md-5 col-12">
+                    <a href="#">
+                        <div class="link_button">
+                            <p>前往 Prototype</p><img src="./img/others/arrow.svg">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="link_button">
+                            <p>設計過程</p><img src="./img/others/arrow.svg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paint">
+        <h1>美編作品</h1>
+        <ul class="gallery">
+            <li><a href="#gallery-1" class="gallery-list"><img
+                        src="./img/pictures/2040_ppt/2040ppt1.png"
+                        alt=""></a></li>
+            <li><a href="#gallery-2" class="gallery-list"><img
+                        src="./img/pictures/notice_poster/noticeposter.png"
+                        alt=""></a></li>
+        </ul>
+        <ul class="gallery">
+            <li><a href="#gallery-3" class="gallery-list"><img
+            src="./img/pictures/rear/rearpic1.png"
+            alt=""></a></li>
+            <li><a href="#gallery-4" class="gallery-list"><img
+                src="./img/pictures/addictea_logo.png"
+                alt=""></a></li>
+        </ul>
+        <ul class="gallery">
+            <li><a href="#gallery-5" class="gallery-list"><img
+            src="./img/pictures/post_pic/igpost_1.png"
+            alt=""></a></li>
+            <li><a href="#gallery-6" class="gallery-list"><img
+                src="./img/pictures/rear_comic/rearcomic_1.png"
+                alt=""></a></li>
+        </ul>
+
+        <div id="gallery-1" class="hide-area">
+            <h2>「2040多元宇宙」第一屆「未來原型」點子松徵件比賽</h2>
+            <p>WeWe Futures：2040 多元宇宙 ( Plurality )今年的主題從多元的元宇宙出發，<br>探討不同世代、地區、國籍在未來 2040 年的生活情境的想像與期望。<br>
+                每個人都可以設定自己希望的空間、發起自己想做的事情。<br>從自己到群眾，從虛擬到實體，從環境、社會、經濟變遷發想未來的生活面向，<br>
+                如 : 居住、交通、飲食、社群、溝通等；<br>你也可以跳脫現實世界，進入到不同的世界或元宇宙裡打造全新的未來，讓多元的希望與想法持續共存、共融在不同的元宇宙世界裡。<br>
+                我們接納所有可能性並賦予每個選擇意義性，讓期望持續擴大，打造眾人一同想像的未來 ( WeWe Futures )。<br><br><img src="./img/pictures/2040_ppt/2040ppt1.png" alt=""><span
+                class="caption"></span></p>
+            <p><img src="./img/pictures/2040_ppt/2040ppt2.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/2040_ppt/2040ppt3.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/2040_ppt/2040ppt4.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/2040_ppt/2040ppt5.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/2040_ppt/2040ppt6.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/2040_ppt/2040ppt7.png" alt=""><span
+                    class="caption"></span></p>
+             <p><img src="./img/pictures/2040_ppt/2040ppt8.png" alt=""><span
+                    class="caption"></span></p>
+        </div>
+        <div id="gallery-2" class="hide-area">
+            <h2>國北教大 資訊科學系2022畢業製作＿注意力守門員<br>海報製作</h2><br><br>
+            <p><img src="./img/pictures/notice_poster/noticeposter.png" alt=""><span
+                    class="caption"></span></p>
+        </div>
+
+        <div id="gallery-3" class="hide-area">
+            <h2>畢業製作＿後站．後綻<br>實境遊戲包內容物製作</h2>
+            <p>我們將這一年來在後站資料調研、訪談與踏查的收穫，<br>
+                濃縮並轉譯成這款實境解謎遊戲，<br>
+                以當代年輕人的角度詮釋台北後站批發商圈，<br>
+                期待讓大眾發現這個具有獨特意義的所在，<br>
+                並持續嘗試以不同「文化體驗」形式讓大眾和城市互動，<br>
+                綻放它更多可能性與發展性。<br><br><img src="./img/pictures/rear/rearpic1.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear/rearpic2.jpg" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear/rearpic3.jpg" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear/rearpic4.jpg" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear/rearpic5.jpg" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear/rearpic6.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear/rearpic7.jpg" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear/rearpic8.jpg" alt=""><span
+                    class="caption"></span></p>
+        </div>
+        <div id="gallery-4" class="hide-area">
+            <h2>2023國立臺北大學_創新創業提案競賽<br>LOGO設計</h2>
+            <p>茶癮企劃所推出的「茶石茶渣石壁材」是為了解決<br>室內裝潢的有害氣味以及減少臺灣過量的茶葉渣垃圾而誕生。<br>
+                「茶石」具備防火、除臭、抑菌、蟲、防水等特性，<br>也可以應用於室內櫃體、層板:室外桌椅板材，甚至是展場空間的建材。<br>
+                我們希望能給民眾一種更安全、安心的生活環境，<br>「茶石」符合再生綠建材與健康綠建材的目標，將會是未來綠建材的新趨勢。<br><br><img src="./img/pictures/addictea_logo.png" alt=""><span
+                    class="caption"></span></p>
+        </div>
+
+        <div id="gallery-5" class="hide-area">
+            <h2>Gemini Birthday Mini Exhibition<br>生日特展貼文製作</h2>
+            <p>除了協助製作生日特展的網站外，<br>亦協助其製作特展主視覺、應援物與宣傳貼文，讓視覺具統一性。<br><br><img src="./img/pictures/post_pic/igpost_1.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/post_pic/igpost_2.png" alt=""><span
+                    class="caption"></span></p>
+        </div>
+        <div id="gallery-6" class="hide-area">
+            <h2>畢業製作＿後站．後綻<br>展覽佈置物</h2>
+            <p>卡片正面為後站商圈販賣的日常物品，背面為3-5種該物品的使用情境。<br>透過翻卡與漫畫的有趣形式，讓觀眾發現後站商圈與日常生活的緊密連結。<br><br><img src="./img/pictures/rear_comic/rearcomic_1.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear_comic/rearcomic_2.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear_comic/rearcomic_3.png" alt=""><span
+                    class="caption"></span></p>
+            <p><img src="./img/pictures/rear_comic/rearcomic_4.png" alt=""><span
+                    class="caption"></span></p>
+        </div>
+    </section>
+
+    <section id="acti">
+        <h1>活動參與</h1>
+        <ul class="slider">
+            <li>
+                <img src="./img/acti/acti_reporter.png" alt="">
+                <h2>報導者夏日學校<span><br>2019.06.29-30</span></h2>
+                <p>參與兩日由《報導者》專業記者群傳授的扎實課程，從怎麼找出新聞到如何寫出一篇好新聞，
+                心法、田調、視角、寫作技巧，以及在圖像與數據上的創新呈現，
+                打開我對深度報導更多不同的認識與想像。</p>
+            </li>
+            <li>
+                <img src="./img/acti/acti_dots.png" alt="">
+                <h2>畢業展覽《噪點 Dots!》統籌組<br>＿總務文書組組長<span><br>2021.03-2022.06</span></h2>
+                <p>總務文書組分為文書與財務兩部份，文書負責策展理論與各式企劃書之文字撰寫及統整;財務則負責整個展覽的資金收支紀錄與補助申請。
+                    身為組長須先了解該做什麼、並且該怎麼做，將架構擬定清楚後再安排各項目交給組員去執行，
+                    待執行完畢後再做最後統整。
+                </p>
+            </li>
+            <li>
+                <img src="./img/acti/acti_raer.png" alt="">
+                <h2>畢業製作＿後站．後綻<span><br>2021.03-2022.06</span></h2>
+                <p>從台北後站商圈的歷史與文化扎根，挖掘當地的特色及其面對現今的困境，試圖以當代年輕人的角度重新詮釋台北後站商圈。
+                    「後站」所延伸出來的「逅」與「綻」，期許藉由團隊的計畫來到這個地方，邂逅台北後站商圈，
+                    讓在地產業、文化與歷史再次綻放出它它們獨有的魅力與特色。
+                </p>
+            </li>
+            <li>
+                <img src="./img/acti/acti_learning.png" alt="">
+                <h2>學習社群成果發表競賽<span><br>2021.09-12</span></h2>
+                <p>我與團隊成員將畢業製作放進學習社群中，特別設計與執行後站的實境解謎遊戲。
+                從產業文化、在地記憶、店家故事切入設計出一款穿越時空的故事架構遊戲，
+                玩家能實際到當地走動並且動腦破關，從遊戲過程中認識當地歷史文化，
+                將過去與今日的後站連結。
+                </p>
+            </li>
+            <li>
+                <img src="./img/acti//acti_2040superskin.png" alt="">
+                <h2>「2040多元宇宙」第一屆<br>「未來原型」點子松徵件比賽<span><br>2022.10-11</span></h2>
+                <p>該主題從多元的元宇宙出發，探討每個人對2040年生活情境的想像與期望。
+                    我與團隊成員們先對主題進行發散思考，紀錄每一種想像的可能，最後聚焦、收攏並確立主題，
+                    接著進一步將概念轉換為具體的行為模式論述與示意圖，完成提案。
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <div>
+            感謝您的閱讀。
+        </div>
+        <img src="./img/contact/smile.svg">
+        <h1>聯絡我</h1>
+        <img src="./img/contact/phone.svg">
+        <p id="#phone">手機｜0933-231461</p>
+        <p>（每日 9:00 - 20:00）</p><br>
+        <img src="./img/contact/mail.svg">
+        <p>信箱｜joker8231461@gmail.com</p>
+    </section>
+    <section id="footer">
+        <img src="./img/contact/logo_white 1.svg" width="80px" height="80px">
+    </section>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="myfirstweb.js"></script>
 </body>
 
