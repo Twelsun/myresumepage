@@ -250,9 +250,9 @@ p {
 }
 
 .downhalf p {
+    position: relative;
     font-size: 20px;
     line-height: 40px;
-    z-index: 99;
 }
 
 .downhalf p span {
@@ -264,7 +264,7 @@ p {
     position: absolute;
     height: 100%;
     left: -72px;
-    top: -20px;
+    top: -12px;
 }
 
 .downhalf>img:nth-of-type(2) {
