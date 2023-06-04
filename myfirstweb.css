@@ -379,6 +379,7 @@ p {
 .areas {
     border-radius: 12px;
     border: 2px solid #333;
+    display: block;
 }
 
 .skcard {
