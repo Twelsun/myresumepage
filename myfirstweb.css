@@ -245,6 +245,7 @@ p {
     padding: 24px;
     text-align: center;
     background-image: url("./img/intro/noteback.svg");
+    background-size: auto;
     position: relative;
     box-shadow: 8px 8px 0px #C8E7ED, 10px 10px 0px #333333;
 }
@@ -911,6 +912,10 @@ p {
 
     .webcard>.row .col-md-7 p {
         font-size: 12px;
+    }
+
+    .skcard {
+    width: 142px;
     }
 
 }
