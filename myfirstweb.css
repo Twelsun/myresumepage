@@ -325,6 +325,10 @@ p {
     padding: 0;
 }
 
+.tab li {
+    width: 33.3%;
+}
+
 .tab li a {
     display: block;
     background: #FFF;
@@ -333,6 +337,7 @@ p {
     border-width: 2px 2px 0px 2px;
     border-style: solid;
     border-color: #333;
+    text-align: center;
 }
 
 .tab li.active a {
